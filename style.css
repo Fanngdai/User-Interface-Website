@@ -1,0 +1,147 @@
+/*#######################[ FONT ]#####################*/
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('../fonts/montserrat/Montserrat-Medium.ttf');
+}
+
+/*--------------------Basic--------------------*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*--------------------Hyperlink--------------------*/
+a:link {
+    color: #4B4B4B;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #4B4B4B;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #828282;
+    background-color: transparent;
+    /* text-decoration: underline; */
+}
+a:active {
+    color: #000000;
+    background-color: transparent;
+    /* text-decoration: underline; */
+}
+
+/*--------------------Navigation Bar--------------------*/
+
+#myNavbar i {
+  padding-right: 0.5rem;
+}
+.navbar_top {
+  position: fixed;
+  z-index: 99999;
+}
+
+.navbar_text {
+  color: #666666;
+  text-decoration: none;
+}
+
+.navbar_text:hover {
+  color: black;
+}
+
+/* Header/Logo Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #6b000D;
+    color: #BEBEBE;
+    font-size: 30px;
+}
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px 10px 0;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 10px -10px 10px 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card_first {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #BEBEBE;
+}
+
+.card_second {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #BEBEBE;
+  height: 275px;
+}
+
+.card_list {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #BEBEBE;
+  height: 275px;
+}
+
+.card_third{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #BEBEBE;
+  height: 3750px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin: 10px -5px 10px;
+  }
+}
