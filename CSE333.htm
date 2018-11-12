@@ -6,7 +6,9 @@
         UI Course Info
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./w3.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="./nav.js"></script>
 </head>
 
 <body>
@@ -16,22 +18,18 @@
            <a class="w3-bar-item w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
            <i class="fa fa-bars"></i>
            </a>
-           <a href="#landing" class="navbar_text w3-bar-item">HOME</a>
-           <a href="#about" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-user"></i>ABOUT</a>
-           <a href="#project" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-code"></i>PROJECT</a>
-           <a href="./writing.html" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-file-pdf-o"></i>WRITING</a>
-           <a href="./resume.html" class="navbar_text w3-bar-item w3-hide-small"><i class="	fa fa-file-text-o"></i>RESUME</a>
-           <!-- <a href="#" class="w3-bar-item w3-hide-small w3-right"> -->
-           <!-- <i class="fa fa-search"></i> -->
+           <a href="#landing" class="navbar_text w3-bar-item">Course Info</a>
+           <a href="#about" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-user"></i>Assignments</a>
+           <a href="#project" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-code"></i>Instructors</a>
+           <a href="./writing.html" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-file-pdf-o"></i>Resources</a>
            </a>
         </div>
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-           <a href="#about" class="navbar_text w3-bar-item" onclick="toggleFunction()">ABOUT</a>
-           <a href="#project" class="navbar_text w3-bar-item" onclick="toggleFunction()">PROJECT</a>
-           <a href="./writing.html" class="navbar_text w3-bar-item" onclick="toggleFunction()">WRITING</a>
-           <a href="./resume.html" class="navbar_text w3-bar-item" onclick="toggleFunction()">RESUME</a>
-           <!-- <a href="#" class="w3-bar-item">SEARCH</a> -->
+           <a href="#about" class="navbar_text w3-bar-item" onclick="toggleFunction()">Course Info</a>
+           <a href="#project" class="navbar_text w3-bar-item" onclick="toggleFunction()">Assignments</a>
+           <a href="./writing.html" class="navbar_text w3-bar-item" onclick="toggleFunction()">instructors</a>
+           <a href="./resume.html" class="navbar_text w3-bar-item" onclick="toggleFunction()">Resources</a>
         </div>
      </div>
 
@@ -41,7 +39,7 @@
       <p>CSE/ISE 333</p>
     </div>
 
-    <div class="row">
+    <div class="row flex-container">
         <div class="column">
             <div class="card_first">
                 <h3>Credits</h3>
@@ -57,10 +55,17 @@
         </div>
 
         <div class="column">
-            <div class="card_first">
+            <div class="card_first special_card" >
                 <h3>Computer Usage</h3>
                 <p>The Adobe Web Suite, HTML5, CSS3, and JavaScript.</p>
             </div>
+        </div>
+
+        <div class="column">
+          <div class="card_second">
+            <h3>Laboratory Projects</h3>
+            <p>UI exercises in the development of graphics, icons, web fonts, dynamic media, and responsive/adaptive design techniques. A final project will incorporate all of the exercises into a cross-platform application that will conform to multiple device display resolutions and orientations.</p>
+          </div>
         </div>
 
         <div class="column">
@@ -71,21 +76,14 @@
         </div>
 
       <div class="column">
-        <div class="card_list">
-          <h3>Course goals</h3>
+        <div class="card_second_left">
+          <h3>Course Goals</h3>
           <ul>
               <li>An ability to develop high-quality user interfaces for desktop, web-based, and mobile interactive systems</li>
               <li>An understanding of guidelines, principles, and theories of user interface design</li>
               <li>An ability to develop user interfaces using industry-standard software platforms</li>
               <li>An understanding of usability issues</li>
           </ul>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card_second">
-          <h3>Laboratory Projects</h3>
-          <p>UI exercises in the development of graphics, icons, web fonts, dynamic media, and responsive/adaptive design techniques. A final project will incorporate all of the exercises into a cross-platform application that will conform to multiple device display resolutions and orientations.</p>
         </div>
       </div>
 

@@ -63,18 +63,13 @@ a:active {
 #myNavbar i {
   padding-right: 0.5rem;
 }
-.navbar_top {
-  position: fixed;
-  z-index: 99999;
+
+#myNavbar a {
+    color: #A69B90;
 }
 
-.navbar_text {
-  color: #666666;
-  text-decoration: none;
-}
-
-.navbar_text:hover {
-  color: black;
+#myNavbar a:hover {
+    color: black;
 }
 
 /* Header/Logo Title */
@@ -88,9 +83,16 @@ a:active {
 
 /* Float three columns side by side */
 .column {
-  float: left;
-  width: 33%;
+  /*float: left;*/
+  min-width: 33%;
+  max-width: 33%;
   padding: 0 10px 10px 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -111,6 +113,8 @@ a:active {
   padding: 16px;
   text-align: center;
   background-color: #BEBEBE;
+  height: 10rem;
+  overflow: auto;
 }
 
 .card_second {
@@ -118,30 +122,76 @@ a:active {
   padding: 16px;
   text-align: center;
   background-color: #BEBEBE;
-  height: 275px;
+  height: 20rem;
+  overflow: auto;
 }
 
-.card_list {
+.card_second_left {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: left;
   background-color: #BEBEBE;
-  height: 275px;
+  height: 20rem;
+  overflow: auto;
 }
 
-.card_third{
+.card_third {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #BEBEBE;
-  height: 3750px;
+  height: 30rem;
+  overflow: auto;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
+/* Phone */
+@media screen and (max-width: 768px) {
   .column {
     width: 100%;
-    display: block;
-    margin: 10px -5px 10px;
+    min-width: 100%;
   }
+
+  .flex-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+  }
+
+  .card_first, .card_second, .card_third, .card_second_left {
+    height: auto;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .column {
+      width: 50%;
+      min-width: 50%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card_first {
+        height: 10rem;
+        overflow: auto;
+    }
+
+    .card_second, .card_second_left {
+        height: 20rem;
+        overflow: auto;
+    }
+
+    .card_third {
+        height: 30rem;
+        overflow: auto;
+    }
+
+    .special_card {
+        height: 20rem;
+        overflow: auto;
+    }
 }
