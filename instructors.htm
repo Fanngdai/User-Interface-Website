@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        UI Instructors
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./w3.css">
+    <link rel="stylesheet" href="./assignments.css">
+    <link rel="stylesheet" href="./footer.css">
+    <script src="./nav.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="w3-top navbar_top">
+        <div class="w3-bar" id="myNavbar">
+           <a class="w3-bar-item w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+           <i class="fa fa-bars"></i>
+           </a>
+           <a href="index.htm" class="navbar_text w3-bar-item"><i class="fa fa-home"></i>Course Info</a>
+           <a href="assignments.htm" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-book"></i>Assignments</a>
+           <a href="instructors.htm" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-user"></i>Instructors</a>
+           <a href="resources.htm" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-internet-explorer"></i>Resources</a>
+           </a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+           <!-- <a href="index.htm" class="navbar_text w3-bar-item" onclick="toggleFunction()">Course Info</a> -->
+           <a href="assignments.htm" class="navbar_text w3-bar-item" onclick="toggleFunction()"><i class="fa fa-book"></i> Assignments</a>
+           <a href="instructors.htm" class="navbar_text w3-bar-item" onclick="toggleFunction()"><i class="fa fa-user"></i> Instructors</a>
+           <a href="resources.htm" class="navbar_text w3-bar-item" onclick="toggleFunction()"><i class="fa fa-internet-explorer"></i> Resources</a>
+        </div>
+     </div>
+
+    <section id="instructors">
+    <!-- Header -->
+    <div class="header">
+      <h1>Instructor & TA</h1>
+      <p>User Interface Development</p>
+      <p>CSE/ISE 333</p>
+    </div>
+
+    <div class="row flex-container">
+    <div class="container">
+      <img src="BrandonCuadrado_sm.jpg" alt="TA" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">Brandon Cuadrado<br>Office Hours Tu/Th 1:00PM - 2:30PM</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="Tony.jpg" alt="Prof" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">Tony Scarlatos<br>Office Hours Fri 10:00AM - 12:00PM</div>
+      </div>
+    </div>
+    </div>
+
+    </section>
+
+    <section class="footer">
+         <br>
+         <p class="footer_name">Course Coordinator: <a href="instructors.htm" style="color:white;">Tony Scarlatos</a></p>
+         <p class="footer_name">Course Email: uidev AT cs DOT stonybrook DOT edu</p>
+         <p class="footer_name"><a href="schedule.htm" style="color:white;">Schedule</a></p>
+         <br>
+      </section>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.footer {
+   background-color: #6B000D;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   font-size: 12px;
+   width: 100%;
+   min-width: 500px;
+}
+
+.footer_name {
+  color: #D5D5D5;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}

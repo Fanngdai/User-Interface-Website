@@ -72,6 +72,11 @@ a:active {
     color: black;
 }
 
+#assignments {
+    min-width: 48rem;
+    width: 100%;
+}
+
 /* Header/Logo Title */
 .header {
     padding: 60px;
@@ -79,14 +84,23 @@ a:active {
     background: #6b000D;
     color: #BEBEBE;
     font-size: 30px;
+
     min-width: 500px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.center {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 50px 0;
 }
 
 /* Float three columns side by side */
 .column {
-  /*float: left;*/
-  min-width: 33%;
-  max-width: 33%;
+  min-width: 100%;
+  max-width: 100%;
   padding: 0 10px 10px 0;
 }
 
@@ -94,6 +108,7 @@ a:active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -110,91 +125,83 @@ a:active {
 }
 
 /* Style the counter cards */
-.card_first {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #BEBEBE;
-  height: 10rem;
-  overflow: auto;
 }
 
-.card_second {
+.card_yea {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #BEBEBE;
-  height: 20rem;
-  overflow: auto;
+  background-color: #828282;
 }
 
-.card_second_left {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: left;
-  background-color: #BEBEBE;
-  height: 20rem;
-  overflow: auto;
+table, th, td {
+    background-color: #BEBEBE;
+    color: #6B000D;
+    border: 1px solid black;
+    border-collapse: collapse;
+    float:  center;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
 }
 
-.card_third {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #BEBEBE;
-  height: 30rem;
-  overflow: auto;
-}
+/*--------------------Image--------------------*/
 
-/* Phone */
-@media screen and (max-width: 768px) {
-  .column {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  .flex-container {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      min-width: 500px;
-  }
-
-  .card_first, .card_second, .card_third, .card_second_left {
+.container {
+    position: relative;
+    width: 30%;
     height: auto;
-  }
+    padding: 10px 10px;
 }
 
-/* Tablet */
-@media screen and (min-width: 769px) and (max-width: 992px) {
-    .column {
-      width: 50%;
-      min-width: 50%;
-    }
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
 
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-    .card_first {
-        height: 10rem;
-        overflow: auto;
-    }
+.container:hover .image {
+  opacity: 0.3;
+}
 
-    .card_second, .card_second_left {
-        height: 20rem;
-        overflow: auto;
-    }
+.container:hover .middle {
+  opacity: 1;
+}
 
-    .card_third {
-        height: 30rem;
-        overflow: auto;
-    }
+.text {
+  background-color: #6B000D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 
-    .special_card {
-        height: 20rem;
-        overflow: auto;
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
     }
+}
+
+.footer {
+   min-width: 720px;
 }

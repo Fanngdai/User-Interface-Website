@@ -6,36 +6,44 @@
         UI Course Info
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./w3.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./footer.css">
     <script src="./nav.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <div class="w3-top navbar_top">
         <div class="w3-bar" id="myNavbar">
            <a class="w3-bar-item w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
            <i class="fa fa-bars"></i>
            </a>
-           <a href="#landing" class="navbar_text w3-bar-item">Course Info</a>
-           <a href="#about" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-user"></i>Assignments</a>
-           <a href="#project" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-code"></i>Instructors</a>
-           <a href="./writing.html" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-file-pdf-o"></i>Resources</a>
+           <a href="index.htm" class="navbar_text w3-bar-item"><i class="fa fa-home"></i>Course Info</a>
+           <a href="assignments.htm" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-book"></i>Assignments</a>
+           <a href="instructors.htm" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-user"></i>Instructors</a>
+           <a href="resources.htm" class="navbar_text w3-bar-item w3-hide-small"><i class="fa fa-internet-explorer"></i>Resources</a>
            </a>
         </div>
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-           <a href="#about" class="navbar_text w3-bar-item" onclick="toggleFunction()">Course Info</a>
-           <a href="#project" class="navbar_text w3-bar-item" onclick="toggleFunction()">Assignments</a>
-           <a href="./writing.html" class="navbar_text w3-bar-item" onclick="toggleFunction()">instructors</a>
-           <a href="./resume.html" class="navbar_text w3-bar-item" onclick="toggleFunction()">Resources</a>
+           <!-- <a href="index.htm" class="navbar_text w3-bar-item" onclick="toggleFunction()">Course Info</a> -->
+           <a href="assignments.htm" class="navbar_text w3-bar-item" onclick="toggleFunction()"><i class="fa fa-book"></i> Assignments</a>
+           <a href="instructors.htm" class="navbar_text w3-bar-item" onclick="toggleFunction()"><i class="fa fa-user"></i> Instructors</a>
+           <a href="resources.htm" class="navbar_text w3-bar-item" onclick="toggleFunction()"><i class="fa fa-internet-explorer"></i> Resources</a>
         </div>
      </div>
 
+    <section id="landing">
     <!-- Header -->
     <div class="header">
-      <h1>User Interface Development</h1>
+      <h1>UI Course Info</h1>
+      <p>User Interface Development</p>
       <p>CSE/ISE 333</p>
     </div>
 
@@ -108,6 +116,19 @@
         </div>
       </div>
     </div>
+    </section>
+
+
+
+
+
+    <section class="footer">
+         <br>
+         <p class="footer_name">Course Coordinator: <a href="instructors.htm" style="color:white;">Tony Scarlatos</a></p>
+         <p class="footer_name">Course Email: uidev AT cs DOT stonybrook DOT edu</p>
+         <p class="footer_name"><a href="schedule.htm" style="color:white;">Schedule</a></p>
+         <br>
+      </section>
 
 </body>
 </html>
